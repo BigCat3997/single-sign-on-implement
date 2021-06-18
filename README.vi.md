@@ -4,7 +4,7 @@
 
 SSO giúp người dùng chỉ cần đăng nhập một lần mà có thể sử dụng hàng loạt nhiều ứng dụng có liên quan nhau mà không cần phải đăng nhập lại. 
 
-[Single_sign-on from wikipedia](https://en.wikipedia.org/wiki/Single_sign-on)
+[Single-sign-on from wikipedia](https://en.wikipedia.org/wiki/Single_sign-on)
 
 
 Một ví dụ điển hình cho việc sử dụng hằng ngày, cũng là hệ thống có hỗ trợ SSO đầu tiên mà tác giả biết đến
