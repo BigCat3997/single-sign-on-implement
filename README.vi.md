@@ -15,7 +15,7 @@ Nếu vẫn chưa hiểu, đây là một ví dụ cho việc triển khai SSO c
 
 Công ty F triển khai nhiều ứng dụng A, B, C, D cho hệ thống của họ. Họ quyết định xây dựng 1 ứng dụng E giành cho việc xác thực khi người dùng sử dụng ứng dụng A, B, C, D bắt buộc phải gọi tới E để thực hiện việc đăng nhập. Và nếu cùng 1 người dùng cần tương tác với cả 4 ứng dụng A, B, C, D trên thì việc đăng nhập tận 4 lần là một điều bất tiện. Từ đó khái niệm Sign-Singl-On (SSO) ra đời để giúp thao tác đăng nhập này được tiện lợi hơn, nghĩa là bạn chỉ cần đăng nhập vào ứng dụng A và không cần phải lặp lại thao tác này cho 3 ứng dụng còn lại.
 
-> Trên lý thuyết, SSO chỉ là một khái niệm, một ý tưởng bạn cần phải có đủ kiến thức về các công nghệ của http, policy để triển khai nó cho hệ thống của mình.
+> Trên lý thuyết, SSO chỉ là một khái niệm, một ý tưởng bạn cần phải có đủ kiến thức về các công nghệ của http, policy đặc thù của thế giới web để triển khai nó cho hệ thống của mình.
 
 ## Một số vấn đề khi triển khai SSO
 
