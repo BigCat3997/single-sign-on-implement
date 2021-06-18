@@ -17,3 +17,14 @@ Công ty F triển khai nhiều ứng dụng A, B, C, D cho hệ thống của h
 
 > Trên lý thuyết, SSO chỉ là một khái niệm, một ý tưởng bạn cần phải có đủ kiến thức về các công nghệ của http, policy để triển khai nó cho hệ thống của mình.
 
+## Một số vấn đề khi triển khai SSO
+
+### Redirect external link từ back-end cho front-end
+Khi người dùng đăng nhập vào Client A và được redirect sang SSO Client để login. Sau khi SSO Back-End xác thực thông tin người dùng đăng nhập là đúng, lúc này chúng ta mới le lói ý tưởng trong đầu sẽ redirect thẳng từ SSO Back-end về lại Client A với credential của người dùng(Cookie). Trường hợp này sẽ không triển khai được và gây ra lỗi CORS. Lý do khi client SSO gọi request đến Back-end SSO thì request này sẽ được BE cho phép (bằng cros config) tuy nhiên khi muốn redirect đến external link thì BE sẽ tự phát sinh ra thêm 1 request nữa để gọi tới external link và request này sẽ không đính kèm bất cứ cors crendential nào nên sẽ phát sinh ra lỗi. Đây là policy khi redirect nên chúng ta nên chúng ta phải tìm đường khác.
+
+Một số cách giải thích về policy này:
+
+[Reason: CORS request external redirect not allowed](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSExternalRedirectNotAllowed)
+[AJAX call fails with a CORS redirect error message](https://docs.newrelic.com/docs/browser/new-relic-browser/troubleshooting/ajax-call-fails-cors-redirect-error-message/)
+
+### Muốn triển khai SSO cho những domain khác nhau thì làm được không
