@@ -4,7 +4,7 @@
 
 SSO giúp người dùng chỉ cần đăng nhập một lần mà có thể sử dụng hàng loạt nhiều ứng dụng có liên quan nhau mà không cần phải đăng nhập lại. 
 
-[for-more-references](https://en.wikipedia.org/wiki/Single_sign-on)
+[Single_sign-on from wikipedia](https://en.wikipedia.org/wiki/Single_sign-on)
 
 
 Một ví dụ điển hình cho việc sử dụng hằng ngày, cũng là hệ thống có hỗ trợ SSO đầu tiên mà tác giả biết đến
@@ -25,6 +25,7 @@ Khi người dùng đăng nhập vào Client A và được redirect sang SSO Cl
 Một số cách giải thích về policy này:
 
 [Reason: CORS request external redirect not allowed](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSExternalRedirectNotAllowed)
+
 [AJAX call fails with a CORS redirect error message](https://docs.newrelic.com/docs/browser/new-relic-browser/troubleshooting/ajax-call-fails-cors-redirect-error-message/)
 
 ### Muốn triển khai SSO cho những domain khác nhau thì làm được không
