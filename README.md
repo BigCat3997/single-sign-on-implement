@@ -1,1 +1,3 @@
-# single-sign-on-implement
+# How to implement single-sign-on
+
+## What is it ?
